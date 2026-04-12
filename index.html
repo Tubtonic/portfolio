@@ -1,134 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Toby Pike Portfolio</title>
-  <meta name="description" content="Portfolio of five projects by Toby Pike">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<title>Toby Pike Portfolio</title>
+<link rel="stylesheet" href="styles.css">
 </head>
-<body class="">
-  <nav class="nav">
-    <div class="container nav-inner">
-      <a class="brand" href="index.html">
-        <span class="brand-mark">TP</span>
-        <span>Toby Pike Portfolio</span>
-      </a>
-      <div class="nav-links">
-        <a href="index.html#projects">Projects</a>
-        <a href="index.html#about">About</a>
-      </div>
-    </div>
-  </nav>
-  
-<header class="hero">
-  <div class="container hero-grid">
-    <section class="hero-panel hero-copy">
-      <span class="kicker"><span class="kicker-dot"></span>Computer Programming and Analysis Portfolio</span>
-      <h1>Toby Pike</h1>
-      <p class="lead">Five projects that best reflect how I build, solve problems, and keep improving as a programmer analyst.</p>
-      <div class="hero-actions">
-        <a class="button primary" href="#projects">View Projects</a>
-        <a class="button" href="kit.html">Start with KIT</a>
-      </div>
-    </section>
-    <aside class="panel stats">
-      <div class="stat">
-        <div class="stat-number">5</div>
-        <div class="stat-label">Portfolio projects covering mobile, database, web, cloud, and early application development.</div>
-      </div>
-      <div class="stat">
-        <div class="stat-number">1</div>
-        <div class="stat-label">Capstone that ties together frontend, backend, database design, debugging, and integration.</div>
-      </div>
-      <div class="stat">
-        <div class="stat-number">3</div>
-        <div class="stat-label">Main strengths reflected across the portfolio: structure, problem solving, and learning through debugging.</div>
-      </div>
-      <div class="stat">
-        <div class="stat-number">2024–2026</div>
-        <div class="stat-label">A snapshot of how my work changed throughout the program, from earlier team projects to more complete systems.</div>
-      </div>
-    </aside>
-  </div>
+<body>
+<header>
+  <h1>Toby Pike</h1>
+  <p class="subtitle">Computer Programming & Analysis Portfolio</p>
+  <p class="tagline">Five projects that reflect how I build systems, solve problems, and keep improving as a developer.</p>
 </header>
 
-<section class="section" id="projects">
-  <div class="container">
-    <div class="section-head">
-      <div>
-        <h2>Selected Projects</h2>
-        <p class="section-copy">These are the five projects I chose because together they show my growth across the program. They cover full-stack web development, mobile development, database design, cloud deployment, and one earlier project that taught me a lot about planning and version control.</p>
-      </div>
+<section class="projects">
+
+  <a href="kit.html" class="card">
+    <img src="images/kit-main.png">
+    <div class="card-content">
+      <h2>KIT – Relationship Manager</h2>
+      <p>Full-stack mobile app with authentication, API, and reminders.</p>
     </div>
-    <div class="project-grid">
-      
-    <article class="project-card accent-capstone">
-      <span class="badge">Capstone / Full Stack / Mobile</span>
-      <h3>KIT Relationship Manager</h3>
-      <div class="subtitle">Capstone mobile app built with Flutter, Node.js, Express, Prisma, and SQLite</div>
-      <p>An end-to-end relationship manager where users can create accounts, track interactions, and see who is due for a check-in. This is the project that best represents everything coming together for me.</p>
-      <div class="tech-list"><span>Flutter</span><span>Node.js</span><span>Express</span><span>Prisma</span><span>SQLite</span><span>JWT</span><span>Postman</span></div>
-      <a class="mini-button" href="kit.html">Open project page →</a>
-    </article>
-    
-    <article class="project-card accent-database">
-      <span class="badge">Database / Analysis / Team Project</span>
-      <h3>Press Start Database Design</h3>
-      <div class="subtitle">Retail game store database and analysis project</div>
-      <p>A full database design for a game store handling inventory, repairs, trade-ins, pricing, and customer history. This one pushed my thinking on normalization, business rules, and designing around a real store workflow.</p>
-      <div class="tech-list"><span>ERD</span><span>Normalization</span><span>Requirements Analysis</span><span>SQL Concepts</span><span>MS Visio</span></div>
-      <a class="mini-button" href="press-start.html">Open project page →</a>
-    </article>
-    
-    <article class="project-card accent-web">
-      <span class="badge">Web / CMS / Frontend Architecture</span>
-      <h3>Product Showcase Website</h3>
-      <div class="subtitle">Next.js + Contentful + role-based authentication logic</div>
-      <p>A structured product listing website with dynamic routing, CMS-managed data, authentication state, and role-based protection. This was a big step forward in building something that felt closer to a real web application.</p>
-      <div class="tech-list"><span>Next.js</span><span>React</span><span>Contentful</span><span>Tailwind CSS</span><span>AuthContext</span><span>.env</span></div>
-      <a class="mini-button" href="contentful.html">Open project page →</a>
-    </article>
-    
-    <article class="project-card accent-cloud">
-      <span class="badge">Cloud / DevOps / Team Project</span>
-      <h3>Reading Nook Cloud Migration</h3>
-      <div class="subtitle">AWS deployment with ECS, ECR, RDS, load balancing, and CI/CD</div>
-      <p>A cloud migration project where our team deployed a containerized bookstore system using AWS services and a GitHub Actions pipeline. It gave me a better sense of how modern systems are actually hosted and maintained.</p>
-      <div class="tech-list"><span>AWS ECS Fargate</span><span>ECR</span><span>RDS</span><span>ALB</span><span>Secrets Manager</span><span>CloudWatch</span><span>GitHub Actions</span></div>
-      <a class="mini-button" href="cloud.html">Open project page →</a>
-    </article>
-    
-    <article class="project-card accent-early">
-      <span class="badge">C# / Game Logic / Early Growth</span>
-      <h3>Flag Guessing Game</h3>
-      <div class="subtitle">Year 2 C# game project</div>
-      <p>A multiple-choice flag guessing game with scoring, time limits, hints, and voice recognition. It is one of the projects that taught me the most about how many small moving parts sit behind even a simple program.</p>
-      <div class="tech-list"><span>C#</span><span>Game Logic</span><span>UI</span><span>Audio</span><span>Teamwork</span></div>
-      <a class="mini-button" href="flag-game.html">Open project page →</a>
-    </article>
-    
+  </a>
+
+  <a href="pressstart.html" class="card">
+    <img src="images/pressstart-erd.png">
+    <div class="card-content">
+      <h2>Press Start Database</h2>
+      <p>Retail system design with ERD and normalization.</p>
     </div>
-  </div>
+  </a>
+
+  <a href="contentful.html" class="card">
+    <img src="images/contentful.png">
+    <div class="card-content">
+      <h2>Product Showcase</h2>
+      <p>Next.js site with CMS and role-based access.</p>
+    </div>
+  </a>
+
+  <a href="cloud.html" class="card">
+    <img src="images/placeholder.png">
+    <div class="card-content">
+      <h2>Cloud Deployment</h2>
+      <p>AWS deployment with ECS, RDS, and CI/CD.</p>
+    </div>
+  </a>
+
+  <a href="flag.html" class="card no-image">
+    <div class="card-content">
+      <h2>Flag Guessing Game</h2>
+      <p>Early C# project showing growth and teamwork lessons.</p>
+    </div>
+  </a>
+
 </section>
-
-<section class="section" id="about">
-  <div class="container">
-    <div class="foot-card">
-      <h2 style="margin-top:0">About this portfolio</h2>
-      <p class="section-copy">This portfolio is meant to support a short guided walkthrough. Each project page includes a summary of the project, what I worked on, what I learned, and how it reflects my development as a programmer analyst. Where relevant, I also included the original report or reflection file as a download.</p>
-    </div>
-  </div>
-</section>
-
-<footer class="foot">
-  <div class="container">
-    <p>Built as a simple static portfolio for presentation purposes.</p>
-  </div>
-</footer>
-
 </body>
 </html>
