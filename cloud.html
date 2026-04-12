@@ -1,6 +1,75 @@
-<body><div class="page">
-<a href="index.html" class="back">← Back</a>
-<h1>Cloud Deployment</h1>
-<img class="project-hero" src="images/placeholder.png">
-<p>AWS ECS, RDS, and CI/CD deployment project.</p>
-</div></body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reading Nook Cloud Deployment Project</title>
+  <link rel="stylesheet" href="styles.css">
+  
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">Toby Pike</a>
+      <nav class="nav-links">
+        <a href="index.html#projects">Projects</a>
+      </nav>
+    </div>
+  </header>
+  
+    <main class="page-wrap">
+      <div class="container">
+        <a href="index.html" class="back-link">← Back to portfolio</a>
+        <section class="project-shell">
+          <div class="project-head">
+            <h1>Reading Nook Cloud Deployment Project</h1>
+            <p class="project-subtitle">A cloud architecture and deployment project that moved a multi-service application into AWS using containerized services, managed infrastructure, and CI/CD automation.</p>
+          </div>
+          <div class="hero-image"><img src="images/placeholder.png" alt="Cloud project placeholder image"></div>
+          <div class="project-body">
+            <section class="panel">
+              
+      <h2>Overview</h2>
+      <p>This project involved migrating and deploying the Reading Nook application into the cloud. The system included a Next.js frontend, a Flask REST API backend, and a PostgreSQL database. The deployment used containerization along with AWS services such as ECS, ECR, RDS, and load balancing.</p>
+
+      <h2>What worked well</h2>
+      <p>The strongest part of this project was understanding how the pieces fit together. The architecture was not just one app on one server. It involved separate services, cloud-managed database hosting, image storage, and a CI/CD workflow through GitHub Actions to keep deployments more consistent.</p>
+
+      <h2>Challenges and learning</h2>
+      <p>This project helped me better understand modern deployment thinking. Instead of only focusing on writing the application, I had to look at how services are hosted, how traffic is routed, how secrets should be handled, and why certain infrastructure choices reduce maintenance or improve security.</p>
+
+      <h2>Why it belongs in this portfolio</h2>
+      <p>It shows that my learning in the program was not limited to writing code. This project demonstrates cloud awareness, architecture reasoning, and a better understanding of how real applications get deployed and maintained.</p>
+    
+              
+            </section>
+            <aside class="panel">
+              
+      <div class="meta-list">
+        <div class="meta-block">
+          <h3>Technologies</h3>
+          <p>AWS ECS, ECR, RDS, Load Balancer, Docker, GitHub Actions, PostgreSQL</p>
+        </div>
+        <div class="meta-block">
+          <h3>Key strengths shown</h3>
+          <p>Cloud architecture, deployment, CI/CD, infrastructure reasoning, service separation</p>
+        </div>
+        <div class="meta-block">
+          <h3>Source file</h3>
+          <div class="file-links">
+            <a href="INFT3200_Group7_ProjectReport.pdf">Cloud project report</a>
+          </div>
+        </div>
+      </div>
+    
+            </aside>
+          </div>
+        </section>
+      </div>
+    </main>
+    
+  <footer class="site-footer">
+    <div class="container">Computer Programming & Analysis Portfolio</div>
+  </footer>
+</body>
+</html>
