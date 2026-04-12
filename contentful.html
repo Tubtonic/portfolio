@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Showcase Website</title>
+  <meta name="description" content="Portfolio of five projects by Toby Pike">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="accent-web">
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">TP</span>
+        <span>Toby Pike Portfolio</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#about">About</a>
+      </div>
+    </div>
+  </nav>
+  
+    <header class="page-hero">
+      <div class="container">
+        <div class="breadcrumb"><a href="index.html">Home</a> / Product Showcase Website</div>
+        <h1 class="page-title">Product Showcase Website</h1>
+        <p class="page-subtitle">A full-stack style web project using Next.js and Contentful that helped push me toward more realistic web application structure.</p>
+        <div class="highlight-bar">
+          <div class="highlight"><div class="label">Role</div><div class="value">Individual project</div></div><div class="highlight"><div class="label">Main stack</div><div class="value">Next.js, React, Contentful, Tailwind CSS</div></div><div class="highlight"><div class="label">What it taught me</div><div class="value">Framework structure and CMS integration</div></div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container page-layout">
+      <article class="content-panel">
+        <h2>Overview</h2>
+        <p>This was a product showcase website built using Next.js, Tailwind CSS, Contentful CMS, and role-based authentication logic. The site displays products retrieved from Contentful, uses dynamic product pages, and includes a custom AuthContext and role-based access control.</p><p>I chose this project because it marked a point where my work started feeling more like actual application development rather than just putting features on a page.</p>
+        <div class="callout">
+          <strong>Why this project is here:</strong>
+          <div style="margin-top:8px;color:var(--muted);line-height:1.75">I chose this project because it shows an important part of my development through the CPA program, whether that was building a complete system, improving how I structure code, understanding business requirements better, or learning from earlier mistakes.</div>
+        </div>
+        <h2>What worked well</h2><p>One of the biggest strengths of this project was the structure. I broke the work into clear sections: setting up Contentful, building the Next.js page structure, handling data fetching, creating authentication state, and protecting parts of the UI.</p><p>That made the project much easier to debug because I could isolate problems instead of trying to fix everything at once.</p><h2>What was challenging</h2><p>The biggest challenge was authentication and role-based access control. Managing state across refreshes and understanding how React context behaves took more effort than I expected.</p><p>I also underestimated how strict Next.js routing conventions are. Some of the errors came down to file placement, dynamic route structure, and environment configuration.</p><h2>What the finished product does well</h2><p>The application renders products dynamically from Contentful, uses scalable dynamic routing for product pages, keeps logic separated cleanly, and uses role-based protection for certain features.</p><p>I also think the project is more professional than some of my earlier work because of the cleaner folder structure and better handling of environment variables and sensitive keys.</p><h2>What I learned</h2><p>This project deepened my understanding of Next.js conventions, framework structure, CMS integration, and frontend state management.</p><p>It also reinforced secure development habits. Using .env.local properly and keeping API credentials out of the repository was one of those small things that makes a project feel more real.</p><h2>How it reflects my growth</h2><p>What I am proud of here is not just that it works, but that it feels organized. It shows progress from building something that simply functions toward building something that is structured, maintainable, and closer to how a real web project should be put together.</p>
+      </article>
+
+      <aside class="side-panel">
+        <h3 style="margin-top:0">Quick links</h3>
+        <div class="quick-list">
+          <div class="quick-item"><strong>Project order</strong>Product Showcase Website is one of the five selected projects in this portfolio.</div>
+          <div class="quick-item"><strong>Presentation use</strong>This page is meant to support a short walkthrough in the video presentation.</div>
+          <div class="quick-item"><strong>Original file</strong>The original report or reflection is available below as a download.</div>
+        </div>
+        <div class="downloads">
+          <a href="product_showcase_reflection.docx" download>Download original reflection ↓</a>
+        </div>
+        <a class="return-link" href="index.html#projects">← Back to all projects</a>
+      </aside>
+    </main>
+    
+</body>
+</html>

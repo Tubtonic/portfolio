@@ -1,244 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Toby Pike | CPA Portfolio</title>
-  <meta name="description" content="Portfolio presentation site for Toby Pike's Computer Programming and Analysis program work." />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toby Pike Portfolio</title>
+  <meta name="description" content="Portfolio of five projects by Toby Pike">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <header class="hero" id="top">
-    <nav class="nav">
-      <div class="brand">Toby Pike</div>
+<body class="">
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">TP</span>
+        <span>Toby Pike Portfolio</span>
+      </a>
       <div class="nav-links">
-        <a href="#projects">Projects</a>
-        <a href="#outcomes">Skills</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </nav>
-
-    <div class="hero-content">
-      <p class="eyebrow">Computer Programming and Analysis Portfolio</p>
-      <h1>Projects that show how I grew into a capable programmer analyst</h1>
-      <p class="hero-text">
-        This portfolio highlights five projects from my CPA program and explains what I built,
-        what I learned, and how each one helped develop my technical and analytical skills.
-      </p>
-      <div class="hero-actions">
-        <a class="button primary" href="#projects">View Projects</a>
-        <a class="button secondary" href="#outcomes">Program Outcomes</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#about">About</a>
       </div>
     </div>
-  </header>
-
-  <main>
-    <section class="section intro">
-      <div class="section-heading">
-        <p class="eyebrow">About this portfolio</p>
-        <h2>A quick overview</h2>
-      </div>
-      <div class="intro-grid">
-        <article class="card">
-          <h3>What this is</h3>
-          <p>
-            This portfolio was created for my final CPA portfolio presentation. It brings together projects
-            from different parts of the program, including web development, testing, mobile development,
-            database design, and cloud work.
-          </p>
-        </article>
-        <article class="card">
-          <h3>What I focused on</h3>
-          <p>
-            Across these projects, I kept building the same core strengths: solving technical problems,
-            working through real implementation issues, connecting systems properly, and thinking about how
-            software supports actual user or business needs.
-          </p>
-        </article>
+  </nav>
+  
+<header class="hero">
+  <div class="container hero-grid">
+    <section class="hero-panel hero-copy">
+      <span class="kicker"><span class="kicker-dot"></span>Computer Programming and Analysis Portfolio</span>
+      <h1>Toby Pike</h1>
+      <p class="lead">Five projects that best reflect how I build, solve problems, and keep improving as a programmer analyst.</p>
+      <div class="hero-actions">
+        <a class="button primary" href="#projects">View Projects</a>
+        <a class="button" href="kit.html">Start with KIT</a>
       </div>
     </section>
-
-    <section class="section" id="projects">
-      <div class="section-heading">
-        <p class="eyebrow">Selected work</p>
-        <h2>Five projects from the program</h2>
+    <aside class="panel stats">
+      <div class="stat">
+        <div class="stat-number">5</div>
+        <div class="stat-label">Portfolio projects covering mobile, database, web, cloud, and early application development.</div>
       </div>
-
-      <div class="projects">
-        <article class="project-card">
-          <div class="project-top">
-            <span class="project-number">01</span>
-            <div>
-              <h3>Product Showcase Website</h3>
-              <p class="stack">Next.js · React · Contentful · JavaScript</p>
-            </div>
-          </div>
-          <p>
-            A web application built to display and manage product content using a headless CMS. This project
-            involved dynamic content rendering, API integration, and building a cleaner structure for content-driven pages.
-          </p>
-          <h4>What I learned</h4>
-          <p>
-            I learned how a headless CMS changes the way content is managed, how to pull in external data properly,
-            and how to work through API and permissions issues that come up in real projects.
-          </p>
-          <h4>Why it matters</h4>
-          <p>
-            This project shows my ability to build web applications that are not just static pages, but systems that work
-            with external services and real content workflows.
-          </p>
-        </article>
-
-        <article class="project-card">
-          <div class="project-top">
-            <span class="project-number">02</span>
-            <div>
-              <h3>Selenium Test Automation Project</h3>
-              <p class="stack">Selenium IDE · Python · Test Automation</p>
-            </div>
-          </div>
-          <p>
-            An automation project focused on reproducing and validating a user workflow on a web application.
-            The goal was to turn manual testing steps into repeatable automated tests.
-          </p>
-          <h4>What I learned</h4>
-          <p>
-            I learned how important testing is outside of just writing code. It made me think more about user flows,
-            edge cases, and how even small front-end changes can affect automation reliability.
-          </p>
-          <h4>Why it matters</h4>
-          <p>
-            This project shows that I understand software quality is part of development, not something separate from it.
-          </p>
-        </article>
-
-        <article class="project-card featured">
-          <div class="project-top">
-            <span class="project-number">03</span>
-            <div>
-              <h3>KIT Relationship Manager</h3>
-              <p class="stack">Flutter · Node.js · Express · Prisma · SQLite</p>
-            </div>
-          </div>
-          <p>
-            KIT is a relationship management mobile app designed to help users keep track of people, log interactions,
-            and stay on top of reminders. This is one of the projects that best represents where my skills are now.
-          </p>
-          <h4>What I learned</h4>
-          <p>
-            This project brought together frontend, backend, database, and authentication work in one system.
-            It taught me how to build end-to-end functionality and how to troubleshoot issues between a mobile app,
-            an API, and a local database-backed backend.
-          </p>
-          <h4>Why it matters</h4>
-          <p>
-            It shows that I can build a full system, not just one piece of one, and that I can work across different tools and layers.
-          </p>
-        </article>
-
-        <article class="project-card">
-          <div class="project-top">
-            <span class="project-number">04</span>
-            <div>
-              <h3>Press Start Database Project</h3>
-              <p class="stack">Database Design · ERD Modeling · SQL Concepts</p>
-            </div>
-          </div>
-          <p>
-            A database design project for a small game store that needed support for sales, trade-ins, repairs,
-            customers, employees, and inventory. The project focused heavily on structure and business logic.
-          </p>
-          <h4>What I learned</h4>
-          <p>
-            I learned how much thought has to go into database design before implementation even starts.
-            It also helped strengthen my ability to reason through relationships, normalization, and the difference
-            between transactional systems and analytics-focused systems.
-          </p>
-          <h4>Why it matters</h4>
-          <p>
-            This project shows my analytical side and my ability to design systems around real business operations instead of just technical theory.
-          </p>
-        </article>
-
-        <article class="project-card">
-          <div class="project-top">
-            <span class="project-number">05</span>
-            <div>
-              <h3>AWS Cloud Project</h3>
-              <p class="stack">AWS · EC2 · CloudFormation · Security Groups · Systems Manager</p>
-            </div>
-          </div>
-          <p>
-            A cloud infrastructure project where I configured and validated AWS resources in a lab environment,
-            including compute, access rules, and deployment-related setup.
-          </p>
-          <h4>What I learned</h4>
-          <p>
-            I learned how cloud setup works in practice and how easy it is for small configuration issues,
-            especially networking and access rules, to stop a system from working the way you expect.
-          </p>
-          <h4>Why it matters</h4>
-          <p>
-            This project shows that I can move beyond application code and understand the infrastructure side of systems too.
-          </p>
-        </article>
+      <div class="stat">
+        <div class="stat-number">1</div>
+        <div class="stat-label">Capstone that ties together frontend, backend, database design, debugging, and integration.</div>
       </div>
-    </section>
-
-    <section class="section outcomes" id="outcomes">
-      <div class="section-heading">
-        <p class="eyebrow">Skills and outcomes</p>
-        <h2>How these projects connect to the program</h2>
+      <div class="stat">
+        <div class="stat-number">3</div>
+        <div class="stat-label">Main strengths reflected across the portfolio: structure, problem solving, and learning through debugging.</div>
       </div>
-      <div class="outcome-grid">
-        <article class="card">
-          <h3>CPA Program Learning Outcomes</h3>
-          <ul>
-            <li>Designing, building, and testing software solutions</li>
-            <li>Applying database and data management concepts</li>
-            <li>Using current tools, frameworks, and development practices</li>
-            <li>Analyzing requirements and solving technical problems</li>
-            <li>Working across web, mobile, database, testing, and cloud environments</li>
-          </ul>
-        </article>
-
-        <article class="card">
-          <h3>Essential Employability Skills</h3>
-          <ul>
-            <li>Problem solving through debugging and troubleshooting</li>
-            <li>Communication through presentations, documentation, and project explanation</li>
-            <li>Self-management through completing long-term projects</li>
-            <li>Adaptability through learning new platforms and tools</li>
-            <li>Critical thinking when making design and implementation decisions</li>
-          </ul>
-        </article>
+      <div class="stat">
+        <div class="stat-number">2024–2026</div>
+        <div class="stat-label">A snapshot of how my work changed throughout the program, from earlier team projects to more complete systems.</div>
       </div>
-    </section>
+    </aside>
+  </div>
+</header>
 
-    <section class="section" id="contact">
-      <div class="section-heading">
-        <p class="eyebrow">Closing note</p>
-        <h2>Where this portfolio leads</h2>
+<section class="section" id="projects">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h2>Selected Projects</h2>
+        <p class="section-copy">These are the five projects I chose because together they show my growth across the program. They cover full-stack web development, mobile development, database design, cloud deployment, and one earlier project that taught me a lot about planning and version control.</p>
       </div>
-      <article class="card closing-card">
-        <p>
-          Looking across these projects, I can see how much broader my skill set has become over the program.
-          I am leaving with experience in application development, APIs, mobile work, database design, testing,
-          and cloud environments. More importantly, I am more confident now in my ability to learn tools, work
-          through issues, and build solutions that make sense technically and practically.
-        </p>
-        <p class="contact-line"><strong>Name:</strong> Toby Pike</p>
-        <p class="contact-line"><strong>Program:</strong> Computer Programming and Analysis</p>
-      </article>
-    </section>
-  </main>
+    </div>
+    <div class="project-grid">
+      
+    <article class="project-card accent-capstone">
+      <span class="badge">Capstone / Full Stack / Mobile</span>
+      <h3>KIT Relationship Manager</h3>
+      <div class="subtitle">Capstone mobile app built with Flutter, Node.js, Express, Prisma, and SQLite</div>
+      <p>An end-to-end relationship manager where users can create accounts, track interactions, and see who is due for a check-in. This is the project that best represents everything coming together for me.</p>
+      <div class="tech-list"><span>Flutter</span><span>Node.js</span><span>Express</span><span>Prisma</span><span>SQLite</span><span>JWT</span><span>Postman</span></div>
+      <a class="mini-button" href="kit.html">Open project page →</a>
+    </article>
+    
+    <article class="project-card accent-database">
+      <span class="badge">Database / Analysis / Team Project</span>
+      <h3>Press Start Database Design</h3>
+      <div class="subtitle">Retail game store database and analysis project</div>
+      <p>A full database design for a game store handling inventory, repairs, trade-ins, pricing, and customer history. This one pushed my thinking on normalization, business rules, and designing around a real store workflow.</p>
+      <div class="tech-list"><span>ERD</span><span>Normalization</span><span>Requirements Analysis</span><span>SQL Concepts</span><span>MS Visio</span></div>
+      <a class="mini-button" href="press-start.html">Open project page →</a>
+    </article>
+    
+    <article class="project-card accent-web">
+      <span class="badge">Web / CMS / Frontend Architecture</span>
+      <h3>Product Showcase Website</h3>
+      <div class="subtitle">Next.js + Contentful + role-based authentication logic</div>
+      <p>A structured product listing website with dynamic routing, CMS-managed data, authentication state, and role-based protection. This was a big step forward in building something that felt closer to a real web application.</p>
+      <div class="tech-list"><span>Next.js</span><span>React</span><span>Contentful</span><span>Tailwind CSS</span><span>AuthContext</span><span>.env</span></div>
+      <a class="mini-button" href="contentful.html">Open project page →</a>
+    </article>
+    
+    <article class="project-card accent-cloud">
+      <span class="badge">Cloud / DevOps / Team Project</span>
+      <h3>Reading Nook Cloud Migration</h3>
+      <div class="subtitle">AWS deployment with ECS, ECR, RDS, load balancing, and CI/CD</div>
+      <p>A cloud migration project where our team deployed a containerized bookstore system using AWS services and a GitHub Actions pipeline. It gave me a better sense of how modern systems are actually hosted and maintained.</p>
+      <div class="tech-list"><span>AWS ECS Fargate</span><span>ECR</span><span>RDS</span><span>ALB</span><span>Secrets Manager</span><span>CloudWatch</span><span>GitHub Actions</span></div>
+      <a class="mini-button" href="cloud.html">Open project page →</a>
+    </article>
+    
+    <article class="project-card accent-early">
+      <span class="badge">C# / Game Logic / Early Growth</span>
+      <h3>Flag Guessing Game</h3>
+      <div class="subtitle">Year 2 C# game project</div>
+      <p>A multiple-choice flag guessing game with scoring, time limits, hints, and voice recognition. It is one of the projects that taught me the most about how many small moving parts sit behind even a simple program.</p>
+      <div class="tech-list"><span>C#</span><span>Game Logic</span><span>UI</span><span>Audio</span><span>Teamwork</span></div>
+      <a class="mini-button" href="flag-game.html">Open project page →</a>
+    </article>
+    
+    </div>
+  </div>
+</section>
 
-  <footer class="footer">
-    <p>Built as a portfolio presentation site for CPA program work.</p>
-    <a href="#top">Back to top</a>
-  </footer>
+<section class="section" id="about">
+  <div class="container">
+    <div class="foot-card">
+      <h2 style="margin-top:0">About this portfolio</h2>
+      <p class="section-copy">This portfolio is meant to support a short guided walkthrough. Each project page includes a summary of the project, what I worked on, what I learned, and how it reflects my development as a programmer analyst. Where relevant, I also included the original report or reflection file as a download.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="container">
+    <p>Built as a simple static portfolio for presentation purposes.</p>
+  </div>
+</footer>
+
 </body>
 </html>

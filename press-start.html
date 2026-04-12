@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Press Start Database Design</title>
+  <meta name="description" content="Portfolio of five projects by Toby Pike">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="accent-database">
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">TP</span>
+        <span>Toby Pike Portfolio</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#about">About</a>
+      </div>
+    </div>
+  </nav>
+  
+    <header class="page-hero">
+      <div class="container">
+        <div class="breadcrumb"><a href="index.html">Home</a> / Press Start Database Design</div>
+        <h1 class="page-title">Press Start Database Design</h1>
+        <p class="page-subtitle">A team database project built around a real retail game store case, with a focus on requirements, normalization, and designing for actual store operations.</p>
+        <div class="highlight-bar">
+          <div class="highlight"><div class="label">Role</div><div class="value">Team project</div></div><div class="highlight"><div class="label">Main focus</div><div class="value">Requirements, normalization, ERD design</div></div><div class="highlight"><div class="label">What it taught me</div><div class="value">Designing around real business processes</div></div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container page-layout">
+      <article class="content-panel">
+        <h2>Overview</h2>
+        <p>For this project, my group designed a database system for Press Start, a game store dealing with inventory, trade-ins, repairs, quotes, pricing, and customer history. The case started from a messy current state with an Access inventory database, paper repair slips, no centralized tracking, inconsistent pricing, and no support for multiple locations.</p><p>What I liked about this one is that it was not just about drawing tables. It forced us to think about how the store actually works and what data the system would need in order to support that workflow without becoming disorganized.</p>
+        <div class="callout">
+          <strong>Why this project is here:</strong>
+          <div style="margin-top:8px;color:var(--muted);line-height:1.75">I chose this project because it shows an important part of my development through the CPA program, whether that was building a complete system, improving how I structure code, understanding business requirements better, or learning from earlier mistakes.</div>
+        </div>
+        <h2>What I worked on</h2><p>I contributed to the reasoning behind the database structure and spent time thinking through whether the design actually matched a real retail environment.</p><p>A big part of that was the ERD and the relationships between customers, inventory, sales, repairs, employees, and pricing history. I also contributed to the conversations around scope, system boundaries, and how the design should support current needs without becoming unrealistic.</p><h2>What the system needed to support</h2><p>The project requirements covered customer management, sales and receipt handling, used item and trade-in tracking, inventory management, pricing management, repairs, payment methods, and employee access control.</p><p>It also had to support performance, security, maintainability, and future expansion. That meant we were not just building for a single transaction, but for the reality of a store that needs consistency, accountability, and room to grow.</p><h2>What worked well</h2><p>This project worked well because it kept pushing us back to business logic. Instead of inventing random tables, we had to ask what problem each part of the design actually solved.</p><p>The normalization process was useful because it showed how easy it is for a system to become messy if entities and relationships are not thought through properly from the start.</p><h2>What I learned</h2><p>This project taught me that database design is not separate from analysis. The structure of the tables depends directly on understanding the business, its workflows, and its constraints.</p><p>It also reinforced how important it is to design systems around transactional reality. In this case, the database needed to support live store operations like repairs, pricing, customer history, and inventory changes, not just report on them afterward.</p><h2>Small reflection</h2><p>Compared to earlier database work, this project felt more realistic because there were more moving parts and more judgment involved. There was no single obvious answer, so a lot of the value came from defending why certain relationships, boundaries, and requirements made sense.</p><p>I think this project demonstrates growth in how I approach systems. I was not just thinking about what entities belong in a diagram. I was thinking more about whether the whole thing would actually make sense if someone had to use it every day.</p>
+      </article>
+
+      <aside class="side-panel">
+        <h3 style="margin-top:0">Quick links</h3>
+        <div class="quick-list">
+          <div class="quick-item"><strong>Project order</strong>Press Start Database Design is one of the five selected projects in this portfolio.</div>
+          <div class="quick-item"><strong>Presentation use</strong>This page is meant to support a short walkthrough in the video presentation.</div>
+          <div class="quick-item"><strong>Original file</strong>The original report or reflection is available below as a download.</div>
+        </div>
+        <div class="downloads">
+          <a href="press_start_report.pdf" download>Download original Press Start report ↓</a>
+        </div>
+        <a class="return-link" href="index.html#projects">← Back to all projects</a>
+      </aside>
+    </main>
+    
+</body>
+</html>
